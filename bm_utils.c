@@ -385,7 +385,7 @@ tbl_open(int tbl, char *mode)
     FILE     *f;
     struct stat fstats;
     int      retcode;
-
+    return stdout;
     if (*tdefs[tbl].name == PATH_SEP)
         strcpy(fullpath, tdefs[tbl].name);
     else
